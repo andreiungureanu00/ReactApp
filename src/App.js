@@ -75,7 +75,12 @@ function App() {
           if (i % 2 == 0) {
             return (
               <div className="main_cell" onClick={() => togglePopup(item.id)}>
-                <img src={item.thumbnail.small} />
+                <div className="container">
+                  <img src={item.thumbnail.small} className="imagine" />
+                  <div class="overlay">
+                    <div class="text">Learn More</div>
+                  </div>
+                </div>
                 <div className="popup_title">{item.title}</div>
                 <div className="object_content">{item.content}</div>
                 <br></br>
@@ -83,6 +88,7 @@ function App() {
                   <div className="avatar">{item.author.name}</div>
                   <div className="avatar">{item.author.role}</div>
                 </div>
+                <br></br>
               </div>
             );
           }
@@ -93,7 +99,12 @@ function App() {
           if (i % 2 == 1)
             return (
               <div className="main_cell" onClick={() => togglePopup(item.id)}>
-                <img src={item.thumbnail.small} />
+                <div className="container">
+                  <img src={item.thumbnail.small} className="imagine" />
+                  <div class="overlay">
+                    <div class="text">Learn More</div>
+                  </div>
+                </div>
                 <div className="popup_title">{item.title}</div>
                 <div className="object_content">{item.content}</div>
                 <br></br>
@@ -101,6 +112,7 @@ function App() {
                   <div className="avatar">{item.author.name}</div>
                   <div className="avatar">{item.author.role}</div>
                 </div>
+                <br></br>
               </div>
             );
         })}
