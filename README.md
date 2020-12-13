@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+﻿Andrei Ungureanu
+andrei090498@gmail.com
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Vertigo Studio Front-end Internship
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+Preview:
+Proiectul a fost creat utilizând utilitarul Create-React-App.
+Pentru pornirea proiectului se rulează comanda npm start în folderul proiectului.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Structura principală (src):
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  
 
-### `npm test`
+App.js conține combinarea tuturor componentelor pentru funcționarea corectă a proiectului. Practic este fișierul de bază în care se face import la  celelalte componente.
+În aux_layouts am plasat componenta responsabilă de fereastra pop-up.
+În layout_cells am păstrat layout-ul pentru cele 2 celule: celula pentru pagina principală (MainCell.js) și celula pentru fereastra pop-up (PopupCell.js).
+În listeners am păstrat funcția pentru închiderea ferestrei pop-up cu tasta Esc.
+Fișierul css se găsește în folderul styles.
+Restul fișierelor sunt by default din structura aplicației Create-React-App.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Implementare:
 
-### `npm run build`
+  Pentru implementarea acestui proiect am folosit Functions and Hooks, așa cum scrie în cerință. Am făcut o mică abatere de la cerința pentru stabilirea dimensiunii în lățime a containerului și l-am făcut mai mare pentru că așa mi s-a părut că arată mai ok.
+Am păstrat design-ul cerut, modificand pe alocuri unele elemente cum ar fi border radius.
+Pentru inchiderea ferestrei pop-up, închiderea se poate face cu butonul X, care apare în marginea superioară a imaginii pop up și are un efect interesant atunci cand se face hover sau tastând ‘Escape’. Pentru stiluri, am utilizat CSS, toate stilurile fiind definite în App.css.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Pagina web este responsive și se redimensionează în funcție de dimensiunea ecranului. Un feature adăugat constă în faptul că pentru ecrane mici (smartphones), layout-ul de 2 coloane se transformă în un layout de o coloana pentru a păstra calitatea fiecărui element și un aspect mai elegant și compact.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
